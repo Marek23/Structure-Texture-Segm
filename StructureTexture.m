@@ -1,8 +1,8 @@
-function [UN1,V] = StructureTexture(I)
+function [UN1,V] = StructureTexture(I, lambda)
 
 [nx,ny] = size(I); normGradI = I;
 %% parametry algorytmu
-lambda = 0.03; eps = 0.0001;
+eps = 0.0001;
 
 %% algorytm rozbicia
 UN1 = I;
